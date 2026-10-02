@@ -1,0 +1,46 @@
+{
+  "outcomes": {
+    "empty-context-abstain": {
+      "contains": true,
+      "grounding": true,
+      "schema": true
+    },
+    "expedited-cost": {
+      "contains": true,
+      "grounding": true,
+      "schema": true
+    },
+    "out-of-scope-abstain": {
+      "contains": true,
+      "grounding": true,
+      "schema": true
+    },
+    "refund-timing": {
+      "contains": true,
+      "grounding": true,
+      "schema": true
+    },
+    "returns-window": {
+      "contains": true,
+      "grounding": true,
+      "schema": true
+    },
+    "shipping-free-threshold": {
+      "contains": true,
+      "grounding": true,
+      "schema": true
+    },
+    "warranty-exclusions": {
+      "contains": true,
+      "grounding": true,
+      "schema": true
+    },
+    "warranty-length": {
+      "contains": true,
+      "grounding": true,
+      "schema": true
+    }
+  },
+  "pass_rate": 1.0,
+  "suite": "support-bot"
+}

@@ -1,0 +1,28 @@
+name: support-bot
+dataset: golden.jsonl
+
+system:
+  type: python
+  target: system:answer
+
+checks:
+  - type: schema
+    schema: schema.json
+
+  - type: contains
+    field: answer
+
+  - type: grounding
+    answer_field: answer
+    citations_field: citations
+    context_field: context
+    min_support: 0.8
+    min_overlap: 0.4
+
+gate:
+  min_pass_rate: 1.0
+  max_regressions: 0
+  per_check:
+    grounding: 1.0
+
+baseline: baseline.json
